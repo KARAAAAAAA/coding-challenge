@@ -1,0 +1,157 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Staatliches', cursive;
+}
+.header{
+	background-color: #F1F1F1;
+	width:  100vw;
+	height: 15vh; 
+	position: fixed;
+	z-index:6;
+}
+.compte{
+	position:absolute;
+	right:5vh;
+	cursor:pointer;
+}
+.connexion{
+	position: fixed;
+	width: 20vw;
+	height: 40vh;
+	margin-right: -2vw;
+	margin-top: 10vh;
+	background-color: grey;
+	color: black;
+	transition:1s ease;
+	z-index:5;
+	right:5vh;
+	font-size: 20px;
+	cursor:pointer;
+}
+
+/*menu burger*/
+
+.menu-burger{
+	position:absolute;
+	top:5vh;
+	left:5vh;
+	cursor:pointer;
+}
+.barre1, .barre2, .barre3{
+	width:32px; 
+	height:5px; 
+	background-color: black;
+	margin: 5px;
+}
+
+/*menu slide*/
+
+ul{
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+}
+li{
+	margin:5vw;
+	font-family: 'Staatliches', cursive;
+	font-size: 2vw;
+	width: 100%;
+}
+ul:hover{
+	cursor:pointer;
+}
+
+/* slide animation */ 
+
+.slide{
+	position: fixed;
+	width: 20vw;
+	height: 85vh;
+	bottom: 0;
+	left: -20vw;
+	margin-left: 0vw;
+	background-color: red;
+	color: white;
+	transition:1s ease;
+	z-index:8;
+}
+.on{
+	left: 0vw;
+	transition:1s ease;
+
+}
+
+/*contenu*/
+
+.content{
+	width: 98.65vw;
+	float: right;
+	margin-top: 15vh;
+	margin-left: 15vw;
+	display: block;
+	position:relative;
+	z-index:2;
+
+}
+
+/*oppacité du fond*/
+
+.content-hide{
+	width: 78.65vw;
+	opacity: 50%;
+	background: grey;
+	transition:2s ease;
+	margin-top: 15vh;
+	z-index:4;
+}
+
+/*mon compte / dropdown*/
+
+.dropbtn {
+  background-color: #F1F1F1;
+  color: white;
+  font-size: 16px;
+  border: none;
+  float: right;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  top: -12vh;
+  right: 1vw;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 17vh;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown:hover .dropbtn {
+	background-color: grey;
+}
+
+/*logo centré*/
+.logo{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 10vw;
+	height: 10vh;
+}
